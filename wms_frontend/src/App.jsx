@@ -1,17 +1,19 @@
 import React from 'react'
 import {Link, Route, Routes} from 'react-router-dom'
-import Elements from './Elements'
+import Items from './Items'
+import Homepg from './homepg/homepg'
 
 const App = () => {
   return (
     <>
       <nav>
         <ul>
-          <li><Link to='/element'>Elements</Link></li>
+          <li><Link to='/'>Home</Link></li>
         </ul>
       </nav>
       <Routes>
-        <Route path='/element' element={<Elements />}/>
+        <Route path='/items' element={<Items />}/>
+        <Route path='/' element={<Homepg />}/>
       </Routes>
     </>
   )

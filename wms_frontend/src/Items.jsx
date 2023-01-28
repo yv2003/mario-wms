@@ -4,7 +4,7 @@ import {collection, getDocs, addDoc, updateDoc, deleteDoc, doc} from 'firebase/f
 import { useState, useEffect } from 'react'
 import './styles.css'
 
-const Elements = () => {
+const Items = () => {
 
     const [data, setData] = useState([])
     const usersCollectionRef = collection(db, "items")
@@ -46,4 +46,4 @@ const Elements = () => {
     )
 }
 
-export default Elements
+export default Items
