@@ -2,7 +2,7 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div>Tech Alchemists</div>
+    <div>Hello, Purvashi</div>
   )
 }
 
